@@ -1,0 +1,15 @@
+org\open\taorder\repository\BookRepository.class
+org\open\taorder\repository\AuthorRepository.class
+org\open\taorder\model\Isbn.class
+org\open\taorder\WebConfiguration.class
+org\open\taorder\formatters\BookFormatter.class
+org\open\taorder\entity\Publisher.class
+org\open\taorder\editors\IsbnEditor.class
+org\open\taorder\controllers\BookController.class
+org\open\taorder\entity\Reviewer.class
+org\open\taorder\entity\Author.class
+org\open\taorder\BookPubApplication.class
+org\open\taorder\repository\ReviewerRepository.class
+org\open\taorder\StartupRunner.class
+org\open\taorder\entity\Book.class
+org\open\taorder\repository\PublisherRepository.class

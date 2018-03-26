@@ -1,0 +1,25 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "IkPM2QLv9urri7S49wzroQx9oXA=",
+			"path": "github.com/gorilla/context",
+			"revision": "08b5f424b9271eedf6f9f0ce86cb9396ed337a42",
+			"revisionTime": "2016-08-17T18:46:32Z"
+		},
+		{
+			"checksumSHA1": "WDwy+CLWP4zY7vELzo0gC477VxU=",
+			"path": "github.com/gorilla/mux",
+			"revision": "07ba1fd60e210dc5cc6f86ec25dc9ecc7c95c295",
+			"revisionTime": "2018-02-26T05:11:51Z"
+		},
+		{
+			"checksumSHA1": "viAh91UgLcEXIHbyC5C9GdB/Yms=",
+			"path": "github.com/rs/cors",
+			"revision": "36f00aa91d31dac5aeba5cee361f0e5d395116ac",
+			"revisionTime": "2018-02-24T20:03:55Z"
+		}
+	],
+	"rootPath": "github.com/BurningLuffy/TravelAgency/TAFlight"
+}
