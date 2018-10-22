@@ -44,7 +44,7 @@ CORS(app)
 
 @app.route('/hotels', methods=['GET'])
 def getHotels():
-    return json.dumps(hotelList, default=hotel_dict).decode('unicode-escape').encode('utf8')
+    return json.dumps(hotelList, default=hotel_dict).encode('utf8')
 
 if __name__ == '__main__':
     app.run(debug=True)

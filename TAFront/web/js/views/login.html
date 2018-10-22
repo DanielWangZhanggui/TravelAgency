@@ -1,0 +1,46 @@
+<!-- this is the template content that is loaded by the MasonryLayout component above  -->
+<div class="justifyCenter">
+
+    <!-- Compensation tile 2x1 -->
+    <div id="loginDiv" class="oj-masonrylayout-tile-2x1">
+        <div class="oj-flex oj-flex-items-pad notifytitle">
+            Welcome to use Travel Agency !!!
+        </div>
+        <div class="oj-flex oj-flex-items-pad compheight">
+            <div class="oj-flex-item" style="padding-left: 9px;">
+                    <!-- <p>Login name: <input data-bind="textInput: username" /></p>
+                    <p>Password: <input type="password" data-bind="textInput: userPassword" /></p> -->
+                <label for="username">Username</label>
+                <input id="username" type="text"  required
+                    data-bind="ojComponent: {component: 'ojInputText',
+                                value: username,
+                                validators: [{type: 'regExp', options: {pattern: '[a-zA-Z0-9]{3,}',
+                                messageDetail: 'You must enter at least 3 letters or numbers'}}],
+                            invalidComponentTracker: tracker}" /><br /><br />
+                 <label for="password">Password</label>
+                <input id="password" type="password" required
+                    data-bind="ojComponent: {component: 'ojInputPassword',
+                                value: password,
+                                validators: [{type: 'regExp', options : {pattern: '(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,}',
+                                messageSummary : '{label} too Weak',
+                                messageDetail: 'The password must contain atleast one uppercase, one lowercase, one number and must be 6 digits long'}}],
+                                invalidComponentTracker: tracker}" /><br /><br />
+                <a class="oj-button-primary oj-button-xl" 
+                id="login" type="button" 
+                data-bind="ojComponent: {component: 'ojButton', 
+                            label: 'Login',
+                            disabled: shouldDisableCreate()},
+                click: onClick"></a> 
+        </div>
+        
+    </div>
+    <div style="display:none" id="errorDialog" title="Login Failed"
+        data-bind="ojComponent:{component: 'ojDialog',
+        rootAttributes: { style: 'max-width:620px;width:100%;'}}">
+        <div class="oj-dialog-body">
+                <div class="oj-flex oj-flex-items-pad notifytitle">
+                        Username or Password is incorrect, please try again.
+                </div>
+        </div>
+    </div>
+</div>
