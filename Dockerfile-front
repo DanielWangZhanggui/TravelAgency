@@ -1,0 +1,7 @@
+FROM node:8.12.0-alpine
+
+COPY TAFront /opt/TAFront
+RUN npm install grunt -g && npm install grunt-cli -g
+RUN cd /opt/TAFront && npm install && npm install grunt -D && npm install grunt-cli -D && grunt build
+EXPOSE 8000
+CMD ["sh", "-c", "cd /opt/TAFront; grunt serve"]

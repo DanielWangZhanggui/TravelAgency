@@ -1,0 +1,6 @@
+FROM node:8.12.0-alpine
+
+COPY TAUser /opt/TAUser
+RUN cd /opt/TAUser && npm install 
+EXPOSE 8999
+CMD ["sh", "-c", "cd /opt/TAUser; npm start"]

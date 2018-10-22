@@ -1,0 +1,7 @@
+FROM golang:1.11.1-alpine3.8
+RUN  apk add --no-cache git mercurial
+COPY TAFlight $GOPATH/src/TAFlight
+RUN cd $GOPATH/src/TAFlight && go get -u github.com/kardianos/govendor && govendor install
+
+EXPOSE 8001
+CMD ["sh", "-c", "cd $GOPATH/bin; ./TAFlight"]

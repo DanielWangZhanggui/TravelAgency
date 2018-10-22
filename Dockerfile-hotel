@@ -1,0 +1,5 @@
+FROM python:3.6.6-alpine3.8
+
+COPY TAHotel /opt/TAHotel
+EXPOSE 5000
+CMD ["sh", "-c", "cd /opt/TAHotel; python ./hotel.py"]
