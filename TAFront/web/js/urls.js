@@ -1,5 +1,5 @@
 var urls = {
-    "flight":"http://localhost:8001/flights",
-    "hotel":"http://localhost:5000/hotels",
-    "user":"http://localhost:8999/login",
+    "flight":"http://flight/flights",
+    "hotel":"http://hotel/hotels",
+    "user":"http://user/login",
   }
