@@ -1,5 +1,7 @@
 FROM python:3.6.6-alpine3.8
 
 COPY TAHotel /opt/TAHotel
+RUN pip install flask
+RUN pip install flask-cors
 EXPOSE 5000
 CMD ["sh", "-c", "cd /opt/TAHotel; python ./hotel.py"]
