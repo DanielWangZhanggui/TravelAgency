@@ -47,4 +47,5 @@ def getHotels():
     return json.dumps(hotelList, default=hotel_dict).encode('utf8')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.debug = True
+    app.run(host = '0.0.0.0',port=5000)
